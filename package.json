@@ -1,0 +1,15 @@
+{
+  "name": "article-preview-component-master",
+  "version": "1.0.0",
+  "description": "challenge from Frontend Mentor",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  },
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css"
+  },
+  "author": "",
+  "license": "ISC"
+}
