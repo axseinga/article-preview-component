@@ -35,7 +35,7 @@
   </head>
   <body>
     <div class="wrapper">
-      <div class="share-popup hidden">
+      <div class="share-popup hidden" id="popup">
         <p class="share-popup__text">Share</p>
         <img
           src="images/icon-facebook.svg"
@@ -53,7 +53,7 @@
           class="share-popup__icon"
         />
       </div>
-      <div class="share-popup__tail hidden"></div>
+      <div class="share-popup__tail hidden" id="popup"></div>
       <div class="article">
         <div class="image"></div>
         <div class="text">
@@ -82,7 +82,13 @@
               </div>
             </div>
 
-            <button class="text__author--share">
+            <button class="text__author--share" id="btn-share-popup">
+              <img src="images/icon-share.svg" alt="Share" class="share-icon" />
+            </button>
+            <button
+              class="text__author--share--hidden"
+              id="btn-share-nav-hidden"
+            >
               <img src="images/icon-share.svg" alt="Share" class="share-icon" />
             </button>
           </div>
@@ -90,7 +96,7 @@
       </div>
     </div>
 
-    <div class="share-nav hidden">
+    <div class="share-nav hidden" id="nav">
       <p class="share-nav__text">Share</p>
       <img
         src="images/icon-facebook.svg"
@@ -107,7 +113,7 @@
         alt="Pinterest icon"
         class="share-nav__icon"
       />
-      <button class="text__author--share">
+      <button class="text__author--share" id="btn-share-nav">
         <img src="images/icon-share.svg" alt="Share" class="share-icon" />
       </button>
     </div>
@@ -118,5 +124,7 @@
         >Frontend Mentor</a
       >. Coded by <a href="#">Your Name Here</a>.
     </div>
+
+    <script src="script.js"></script>
   </body>
 </html>

@@ -147,8 +147,25 @@ body {
       }
 
       @media only screen and (max-width: $bp-smallest) {
-        height: 4rem;
-        width: 4rem;
+        display: none;
+      }
+
+      &--hidden {
+        border: none;
+        text-decoration: none;
+        background-color: transparent;
+
+        background-color: $color-greyish-blue-light;
+        height: 3.5rem;
+        width: 3.5rem;
+        border-radius: 50%;
+        text-align: center;
+        cursor: pointer;
+        display: none;
+
+        @media only screen and (max-width: $bp-smallest) {
+          display: inline-block;
+        }
       }
     }
 
