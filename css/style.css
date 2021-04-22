@@ -15,6 +15,10 @@ html {
     html {
       font-size: 50%;
       letter-spacing: 0.5px; } }
+  @media only screen and (max-width: 34rem) {
+    html {
+      font-size: 50%;
+      letter-spacing: 0.5px; } }
 
 body {
   background-color: #ecf2f8;
@@ -42,6 +46,10 @@ body {
       height: 60%;
       grid-template-columns: 1fr;
       grid-template-rows: minmax(min-content, 1.7fr) minmax(min-content, 2fr); } }
+  @media only screen and (max-width: 34rem) {
+    .article {
+      height: 60%;
+      width: 80%; } }
 
 .image {
   height: 100%;
@@ -70,6 +78,9 @@ body {
     .text {
       gap: 10px;
       padding: 5% 10%; } }
+  @media only screen and (max-width: 43.75rem) {
+    .text {
+      gap: 2px; } }
   .text__heading {
     color: #48556a;
     font-weight: 600;
@@ -199,6 +210,9 @@ body {
   display: flex;
   justify-content: space-evenly;
   align-items: center; }
+  @media only screen and (max-width: 34rem) {
+    .share-nav {
+      width: 80%; } }
   .share-nav__text {
     color: #9eafc2;
     text-transform: uppercase;
