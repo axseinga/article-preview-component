@@ -1,36 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Article preview component</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
 
-  Shift the overall look and feel by adding these wonderful 
-  touches to furniture in your home
+    <link rel="stylesheet" href="css/style.css" />
 
-  Ever been in a room and felt like something was missing? Perhaps 
-  it felt slightly bare and uninviting. I’ve got some simple tips 
-  to help you make any room feel complete.
+    <title>Frontend Mentor | Article preview component</title>
 
-  Michelle Appleton
-  28 Jun 2020
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="share-popup hidden">
+        <p class="share-popup__text">Share</p>
+        <img
+          src="images/icon-facebook.svg"
+          alt="Facebook icon"
+          class="share-popup__icon"
+        />
+        <img
+          src="images/icon-twitter.svg"
+          alt="Twitter icon"
+          class="share-popup__icon"
+        />
+        <img
+          src="images/icon-pinterest.svg"
+          alt="Pinterest icon"
+          class="share-popup__icon"
+        />
+      </div>
+      <div class="share-popup__tail hidden"></div>
+      <div class="article">
+        <div class="image"></div>
+        <div class="text">
+          <div class="text__heading">
+            Shift the overall look and feel by adding these wonderful touches to
+            furniture in your home
+          </div>
 
-  Share
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+          <div class="text__quote">
+            Ever been in a room and felt like something was missing? Perhaps it
+            felt slightly bare and uninviting. I’ve got some simple tips to help
+            you make any room feel complete.
+          </div>
+          <div class="text__author">
+            <div class="text__author__details">
+              <img
+                src="images/avatar-michelle.jpg"
+                alt="Avatar"
+                class="text__author__details__img"
+              />
+              <div class="text__author__details__box">
+                <h2 class="text__author__details__box--name">
+                  Michelle Appleton
+                </h2>
+                <p class="text__author__details__box--date">28 Jun 2020</p>
+              </div>
+            </div>
+
+            <button class="text__author--share">
+              <img src="images/icon-share.svg" alt="Share" class="share-icon" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="share-nav hidden">
+      <p class="share-nav__text">Share</p>
+      <img
+        src="images/icon-facebook.svg"
+        alt="Facebook icon"
+        class="share-nav__icon"
+      />
+      <img
+        src="images/icon-twitter.svg"
+        alt="Twitter icon"
+        class="share-nav__icon"
+      />
+      <img
+        src="images/icon-pinterest.svg"
+        alt="Pinterest icon"
+        class="share-nav__icon"
+      />
+      <button class="text__author--share">
+        <img src="images/icon-share.svg" alt="Share" class="share-icon" />
+      </button>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
 </html>
